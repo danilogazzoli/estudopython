@@ -1,0 +1,6 @@
+bahamas.png
+conga.mp3
+smurfs.avi
+cancun.png
+ozzy.mp3
+foto.csv
