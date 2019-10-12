@@ -1,5 +1,6 @@
 def AdicionarLista(lista, nome, sobrenome, idade):
-    rec = dict({('nome', nome), ('sobrenome', sobrenome), ('idade',idade)})
+    #rec = dict({('nome', nome), ('sobrenome', sobrenome), ('idade',idade)})
+    rec = {'nome': nome, 'sobrenome': sobrenome, 'idade':idade}
     lista.append(rec)
     return lista
 
