@@ -1,0 +1,7 @@
+banana
+melancia
+abacaxi
+abacate
+kiwi
+pera
+{'nome': 'Danilo', 'sobrenome': 'Gazzoli', 'idade': 42}{'nome': 'Danilo', 'sobrenome': 'Gazzoli', 'idade': 42}{'nome': 'Danilo', 'sobrenome': 'Gazzoli', 'idade': 42}
