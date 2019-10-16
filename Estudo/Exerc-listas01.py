@@ -20,7 +20,7 @@ def RetornaPares(numlist):
     pares = []
     for x in numlist:
         if x % 2 == 0:
-            pares = pares + [x]
+            pares += [x]
     return pares
 
 def RetornaOcorrencias(numlist):
@@ -28,7 +28,7 @@ def RetornaOcorrencias(numlist):
     count = 0
     for x in numlist:
         if x == prim:
-            count = count + 1
+            count += 1
     return count
 
 def Media(numlist):
@@ -36,14 +36,14 @@ def Media(numlist):
     soma = 0
     for x in numlist:
         count = count + 1
-        soma = soma + x
+        soma += x
     return soma // count
 
 def SomaNegativos(numlist):
     soma = 0
     for x in numlist:
         if x < 0:
-            soma = soma + x
+            soma += x
     return soma
 
 
