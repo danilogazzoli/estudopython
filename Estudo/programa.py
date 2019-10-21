@@ -166,3 +166,6 @@ print(pessoa['nome'])
 print(pessoa.keys())
 
 print(pessoa.values())
+
+print('Este é um exemplo de print com %s' %('%s')) 
+print('Este é um exemplo de print com %s' %(100)) 
