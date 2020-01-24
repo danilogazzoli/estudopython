@@ -1,0 +1,147 @@
+from correntista import Correntista
+from cpf import Cpf
+import os
+from excecoes import ListaVazia
+from excecoes import SaldoNegativo
+from excecoes import OpcaoInvalida
+from auditoriaCorrentistas import AuditoriaCorrentistas
+from banco import Banco
+
+clear = lambda: os.system('clear')
+
+
+class Principal:
+    def __init__(self):
+        self.__banco = Banco()
+        self.__correntistaAtual = None
+
+    def displayCorrentistas(self):
+        self.__banco.displayCorrentistas()
+        print('=' * 10)
+        print('Escolha um correntista:')
+        opcao = input()
+        return int(opcao)
+
+    def displayCorrentistasPorNome(self):
+        print('Digite uma parte do nome:')
+        nome = input()
+        lista = self.__banco.findCorrentistaPorNome(nome)
+        if len(lista) > 0:
+            print('=' * 10)
+            print('Escolha um correntista:')
+            opcao = int(input())
+            return int(opcao)
+        else:
+            print('Não foi encontrado nenhum correntista com este nome.')
+            input()
+            return None    
+
+    def cadastrarCorrentista(self):
+        self.__banco.cadastrarCorrentista()
+
+    def displayMenu(self):   
+        clear()
+        print('Operações')
+        print('='* 10)
+        print('1 - Cadastrar correntista')
+        print('2 - Selecionar correntista por Código')
+        print('3 - Selecionar correntista por Nome')
+        print('4 - Exibir a auditoria')
+        print('5 - Listar auditoria por CPF')
+        print('6 - Sair')
+        opcao = int(input())
+        return opcao
+
+    def displaySubMenu(self):   
+        clear()
+        print('Operações para o correntista => "{}"'.format(self.__correntistaAtual.nome))
+        print('Codigo: {}, Nome: {}, Saldo: {}'.format(self.__correntistaAtual.codigo, self.__correntistaAtual.nome, self.__correntistaAtual.saldo))
+        print('='* 10)
+        print('1 - Fazer Depósito')
+        print('2 - Fazer Saque')
+        print('3 - Ver Histórico')
+        print('4 - Menu principal')
+
+        opcao = int(input())
+        return opcao
+
+
+    def displayHistorico(self):
+        for hist in self.__correntistaAtual:
+            print("Operacao: {}, Valor: {}".format(hist.operacao, hist.valor))
+
+    def findCorrentista(self, codigo):
+        return self.__banco.findCorrentistaPorCodigo(codigo)
+
+    def movimentaCorrentista(self):
+        if self.__correntistaAtual == None:
+            print('Correntista não encontrado.')
+            input()
+        else:
+            opcao = self.displaySubMenu()
+            if opcao == 1:
+                print('Digite o valor do depósito:')
+                deposito = int(input())
+                self.__correntistaAtual.deposita(deposito)
+            elif opcao == 2:   
+                print('Digite o valor do saque:')
+                saque = int(input())
+                self.__correntistaAtual.saque(saque)
+            elif opcao == 3:   
+                self.displayHistorico()
+                input()
+
+
+    def executa(self):  
+        while True:
+            try:
+                opcao = int(self.displayMenu())
+                if opcao == 1:
+                    self.cadastrarCorrentista()
+                elif opcao == 2:
+                    codigo = self.displayCorrentistas()
+                    self.__correntistaAtual = self.findCorrentista(codigo)
+                    self.movimentaCorrentista()
+                elif opcao == 3:
+                   codigo = self.displayCorrentistasPorNome()
+                   if codigo != None:
+                       self.__correntistaAtual = self.findCorrentista(codigo)
+                       self.movimentaCorrentista()
+
+                elif opcao == 4:
+                    audit = AuditoriaCorrentistas()
+                    audit.get_instance().listar_todos()
+                    input()
+                elif opcao == 5:
+                    print('Digite o CPF:')
+                    cpf = str(input())
+                    c = Cpf(cpf)
+
+                    audit = AuditoriaCorrentistas()
+                    audit.get_instance().listar_por_cpf(c)
+                    input()
+                elif opcao >= 6:    
+                    break
+            except SaldoNegativo:
+                print('O correntista {} ficará com saldo negativo. Operação não executada.'.format(self.__correntistaAtual.nome) )    
+                input()
+            except OpcaoInvalida:
+                print('Opção inválida.')    
+                input()
+            except ListaVazia:
+                print('Não há correntistas cadastrados.')    
+                input()
+            except ValueError:
+                print('Opção inválida.')    
+                input()
+            except Exception as e:
+                print("outra exceção:" + e.__class__.__name__ )    
+                print("Mensagem:" + str(e))
+                input()
+
+if __name__ == '__main__':
+    print('execução pelo terminal')
+    sistema = Principal()
+    sistema.executa()
+else:
+    print('execução como módulo')    

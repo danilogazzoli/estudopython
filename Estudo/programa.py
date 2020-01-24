@@ -169,3 +169,31 @@ print(pessoa.values())
 
 print('Este é um exemplo de print com %s' %('%s')) 
 print('Este é um exemplo de print com %s' %(100)) 
+
+"""
+people = {1: {'Name': 'John', 'Age': '27', 'Sex': 'Male'},
+          2: {'Name': 'Marie', 'Age': '22', 'Sex': 'Female'}}
+"""
+
+people = {'02639086901': {'Movimentacao': []},
+          '01400517915': {'Movimentacao': []}}
+
+mov = []
+mov.append('a')
+mov.append('b')
+people['02639086901'] = {'Movimentacao': mov}
+
+mov.append('c')
+mov.append('e')
+mov.append('d')
+
+people['00502117944'] = {'Movimentacao': mov}
+
+for p_id, p_info in people.items():
+    print("\nPerson ID:", p_id)
+    
+    for key in p_info:
+        print(key + ':', p_info[key])
+print('*'*30)        
+print(people.values())        
+print(people.keys())        
