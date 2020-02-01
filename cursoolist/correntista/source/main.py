@@ -15,17 +15,17 @@ class Principal:
         self.__banco = Banco()
         self.__correntistaAtual = None
 
-    def displayCorrentistas(self):
-        self.__banco.displayCorrentistas()
+    def display_correntistas(self):
+        self.__banco.display_correntistas()
         print('=' * 10)
         print('Escolha um correntista:')
         opcao = input()
         return int(opcao)
 
-    def displayCorrentistasPorNome(self):
+    def display_correntistas_por_nome(self):
         print('Digite uma parte do nome:')
         nome = input()
-        lista = self.__banco.findCorrentistaPorNome(nome)
+        lista = self.__banco.find_correntista_por_nome(nome)
         if len(lista) > 0:
             print('=' * 10)
             print('Escolha um correntista:')
@@ -34,15 +34,15 @@ class Principal:
         else:
             print('Não foi encontrado nenhum correntista com este nome.')
             input()
-            return None    
+            return None
 
     def cadastrarCorrentista(self):
-        self.__banco.cadastrarCorrentista()
+        self.__banco.cadastra_correntista()
 
-    def displayMenu(self):   
+    def displayMenu(self):
         clear()
         print('Operações')
-        print('='* 10)
+        print('=' * 10)
         print('1 - Cadastrar correntista')
         print('2 - Selecionar correntista por Código')
         print('3 - Selecionar correntista por Nome')
@@ -52,11 +52,12 @@ class Principal:
         opcao = int(input())
         return opcao
 
-    def displaySubMenu(self):   
+    def displaySubMenu(self):
         clear()
         print('Operações para o correntista => "{}"'.format(self.__correntistaAtual.nome))
-        print('Codigo: {}, Nome: {}, Saldo: {}'.format(self.__correntistaAtual.codigo, self.__correntistaAtual.nome, self.__correntistaAtual.saldo))
-        print('='* 10)
+        print('Codigo: {}, Nome: {}, Saldo: {}'.format(self.__correntistaAtual.codigo, self.__correntistaAtual.nome,
+                                                       self.__correntistaAtual.saldo))
+        print('=' * 10)
         print('1 - Fazer Depósito')
         print('2 - Fazer Saque')
         print('3 - Ver Histórico')
@@ -65,13 +66,12 @@ class Principal:
         opcao = int(input())
         return opcao
 
-
     def displayHistorico(self):
         for hist in self.__correntistaAtual:
             print("Operacao: {}, Valor: {}".format(hist.operacao, hist.valor))
 
     def findCorrentista(self, codigo):
-        return self.__banco.findCorrentistaPorCodigo(codigo)
+        return self.__banco.find_correntista_por_codigo(codigo)
 
     def movimentaCorrentista(self):
         if self.__correntistaAtual == None:
@@ -83,30 +83,29 @@ class Principal:
                 print('Digite o valor do depósito:')
                 deposito = int(input())
                 self.__correntistaAtual.deposita(deposito)
-            elif opcao == 2:   
+            elif opcao == 2:
                 print('Digite o valor do saque:')
                 saque = int(input())
                 self.__correntistaAtual.saque(saque)
-            elif opcao == 3:   
+            elif opcao == 3:
                 self.displayHistorico()
                 input()
 
-
-    def executa(self):  
+    def executa(self):
         while True:
             try:
                 opcao = int(self.displayMenu())
                 if opcao == 1:
                     self.cadastrarCorrentista()
                 elif opcao == 2:
-                    codigo = self.displayCorrentistas()
+                    codigo = self.display_correntistas
                     self.__correntistaAtual = self.findCorrentista(codigo)
                     self.movimentaCorrentista()
                 elif opcao == 3:
-                   codigo = self.displayCorrentistasPorNome()
-                   if codigo != None:
-                       self.__correntistaAtual = self.findCorrentista(codigo)
-                       self.movimentaCorrentista()
+                    codigo = self.display_correntistas_por_nome()
+                    if codigo is not None:
+                        self.__correntistaAtual = self.findCorrentista(codigo)
+                        self.movimentaCorrentista()
 
                 elif opcao == 4:
                     audit = AuditoriaCorrentistas()
@@ -120,28 +119,30 @@ class Principal:
                     audit = AuditoriaCorrentistas()
                     audit.get_instance().listar_por_cpf(c)
                     input()
-                elif opcao >= 6:    
+                elif opcao >= 6:
                     break
             except SaldoNegativo:
-                print('O correntista {} ficará com saldo negativo. Operação não executada.'.format(self.__correntistaAtual.nome) )    
+                print('O correntista {} ficará com saldo negativo. Operação não executada.'.format(
+                    self.__correntistaAtual.nome))
                 input()
             except OpcaoInvalida:
-                print('Opção inválida.')    
+                print('Opção inválida.')
                 input()
             except ListaVazia:
-                print('Não há correntistas cadastrados.')    
+                print('Não há correntistas cadastrados.')
                 input()
             except ValueError:
-                print('Opção inválida.')    
+                print('Opção inválida.')
                 input()
             except Exception as e:
-                print("outra exceção:" + e.__class__.__name__ )    
+                print("outra exceção:" + e.__class__.__name__)
                 print("Mensagem:" + str(e))
                 input()
+
 
 if __name__ == '__main__':
     print('execução pelo terminal')
     sistema = Principal()
     sistema.executa()
 else:
-    print('execução como módulo')    
+    print('execução como módulo')

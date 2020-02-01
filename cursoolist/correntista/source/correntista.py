@@ -3,6 +3,7 @@ from cpf import Cpf
 from excecoes import SaldoNegativo
 from auditoriaCorrentistas import AuditoriaCorrentistas
 
+
 class Correntista:
     """ Classe correntista """
     def __init__(self, codigo, nome, Cpf, saldoinicial):

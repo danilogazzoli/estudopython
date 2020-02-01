@@ -10,16 +10,16 @@ class Banco:
     def __init__(self):
         self.__listac = []
 
-    def printCorrentistas(self, lista):    
+    def print_correntistas(self, lista):    
         for c in lista:
             print('Código: {}, Nome: {}, CPF: {}, Saldo: {}'.format(c.codigo, c.nome, c.Cpf.strcpf, c.saldo))
 
-    def displayCorrentistas(self):
+    def display_correntistas(self):
         if len(self.__listac) == 0:
             raise ListaVazia 
-        self.printCorrentistas(__listac)
+        self.print_correntistas(__listac)
 
-    def cadastrarCorrentista(self):
+    def cadastra_correntista(self):
         print('Digite o nome:') 
         nome = input()
         print('Saldo inicial:')
@@ -30,7 +30,7 @@ class Banco:
         c = Correntista(len(self.__listac) + 1,  nome, cp, saldoinicial)
         self.__listac.append(c)
         
-    def findCorrentistaPorCodigo(self, codigo):
+    def find_correntista_por_codigo(self, codigo):
         correntista = None
         for c in self.__listac:
             if c.codigo == codigo:
@@ -38,11 +38,11 @@ class Banco:
                 break
         return correntista
 
-    def findCorrentistaPorNome(self, nome):
+    def find_correntista_por_nome(self, nome):
         retorno = []
         for c in self.__listac:
             if nome in c.nome:
                 retorno.append(c)
-        self.printCorrentistas(retorno)
+        self.print_correntistas(retorno)
         return retorno
 
