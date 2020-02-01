@@ -2,6 +2,7 @@ from movimentacao import Saque, Deposito
 from cpf import Cpf
 from excecoes import SaldoNegativo
 from auditoriaCorrentistas import AuditoriaCorrentistas
+import json
 
 
 class Correntista:
@@ -36,9 +37,19 @@ class Correntista:
 
     def serialize(self):
         return {
+            'codigo': self.codigo,
             'nome': self.nome,
-            'cpf': self.Cpf.strcpf,
-            'saldo': self.saldo}    
+            'cpf': self.Cpf.serialize(),
+            'saldo': self.saldo}  
+    
+    @classmethod
+    def deserialize(cls, data):
+       codigo = data['codigo']
+       nome = data['nome']
+       saldo = data['saldo']
+       cpf = Cpf.deserialize(data['cpf'])
+       return Correntista(codigo, nome, cpf, saldo)
+
 
     def __next__(self):
         if self.indice >= len(self.historico):

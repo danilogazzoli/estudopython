@@ -6,6 +6,7 @@ from excecoes import SaldoNegativo
 from excecoes import OpcaoInvalida
 from auditoriaCorrentistas import AuditoriaCorrentistas
 from banco import Banco
+import json
 
 clear = lambda: os.system('clear')
 
@@ -45,12 +46,14 @@ class Principal:
         cpf = input()
         cp = Cpf(cpf)
         cont = self.__banco.get_correntistas_count
-        print('cont 2:{}'.format(cont))
         c = Correntista((cont + 1),  nome, cp, saldoinicial)
         print(c.serialize())
+        jsonstr = json.dumps(c.serialize(), indent=4)
+        print(jsonstr)
         input()
-
-        self.__banco.cadastra_correntista(c)
+        data = json.loads(jsonstr)
+        cdeserializado = Correntista.deserialize(data)
+        self.__banco.cadastra_correntista(cdeserializado)
 
     def displayMenu(self):
         clear()

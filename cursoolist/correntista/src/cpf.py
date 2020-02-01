@@ -1,3 +1,5 @@
+import json
+
 class Cpf:
     "classe para validação de CPF"
     def __init__(self, cpf):
@@ -23,5 +25,13 @@ class Cpf:
     @property
     def strcpf(self):
         return self.__cpf      
+
+    def serialize(self):
+        return {'cpf': self.__cpf}    
+    
+    @classmethod
+    def deserialize(cls, data):
+        print(data)
+        return Cpf(data['cpf'])
 
 

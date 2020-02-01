@@ -22,7 +22,6 @@ class Banco:
     @property
     def get_correntistas_count(self):
         cont = len(self.__listac)
-        print('passou aqui {}'.format(cont))
         return int(cont)
 
     def cadastra_correntista(self, correntista):
@@ -43,4 +42,10 @@ class Banco:
                 retorno.append(c)
         self.print_correntistas(retorno)
         return retorno
+
+    def serialize(self):
+        #lista = []
+        #for c in self.__listac:
+        #    lista.append(c.serialize())
+        return {'correntistas': c.serialize() for c in self.__listac}
 
