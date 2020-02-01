@@ -9,15 +9,14 @@ class TestBancoMethods(unittest.TestCase):
     def setUp(self):
         self.__banco = Banco()
 
-    def test_saque(self):
-        self.assertEqual(self.__correntista.saldo, 100, 'Saldo inicial está errado')
+    def test_cadastra_correntista(self):
+        c = self.__banco.findCorrentistaPorCodigo(-1)
+        self.assertEqual(c, None, 'Correntista tem que ser None')
+        self.__banco.cadastra_correntista()
+        
         self.__correntista.saque(50)
         self.assertEqual(self.__correntista.saldo, 50, 'Saldo ficou errado, deveria ser 50.')
         
-    def test_deposita(self):
-        self.assertEqual(self.__correntista.saldo, 100, 'Saldo inicial está errado, é esperado o valor de 100.')
-        self.__correntista.deposita(100)
-        self.assertEqual(self.__correntista.saldo, 200, 'Saldo ficou errado, deveria ser 200.')
 
 
 if __name__ == '__main__':

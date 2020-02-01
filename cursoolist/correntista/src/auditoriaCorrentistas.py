@@ -38,3 +38,17 @@ class AuditoriaCorrentistas:
         else:
             print('CPF não encontrado.')        
 
+    def serialize(self):
+        arr_all = []
+        for p_id, p_info in self.lista.items():   
+            arr_mov = []
+            for key in p_info:
+                if type(p_info[key]) is list:
+                    for item in list(p_info[key]):
+                        dic = {"operacao": item.operacao, 
+                               "valor": item.valor}
+                        arr_mov.append(dic)
+            arr_all.append({'cpf': p_id,
+                            'movimentacao': arr_mov})    
+
+        return {'cpfs' : arr_all} 

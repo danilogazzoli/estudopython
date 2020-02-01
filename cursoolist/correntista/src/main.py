@@ -36,8 +36,21 @@ class Principal:
             input()
             return None
 
-    def cadastrarCorrentista(self):
-        self.__banco.cadastra_correntista()
+    def cadastra_correntista(self):
+        print('Digite o nome:') 
+        nome = input()
+        print('Saldo inicial:')
+        saldoinicial = int(input())
+        print('CPF:')
+        cpf = input()
+        cp = Cpf(cpf)
+        cont = self.__banco.get_correntistas_count
+        print('cont 2:{}'.format(cont))
+        c = Correntista((cont + 1),  nome, cp, saldoinicial)
+        print(c.serialize())
+        input()
+
+        self.__banco.cadastra_correntista(c)
 
     def displayMenu(self):
         clear()
@@ -48,7 +61,8 @@ class Principal:
         print('3 - Selecionar correntista por Nome')
         print('4 - Exibir a auditoria')
         print('5 - Listar auditoria por CPF')
-        print('6 - Sair')
+        print('6 - Listar auditoria serializado')
+        print('7 - Sair')
         opcao = int(input())
         return opcao
 
@@ -96,7 +110,7 @@ class Principal:
             try:
                 opcao = int(self.displayMenu())
                 if opcao == 1:
-                    self.cadastrarCorrentista()
+                    self.cadastra_correntista()
                 elif opcao == 2:
                     codigo = self.display_correntistas
                     self.__correntistaAtual = self.findCorrentista(codigo)
@@ -119,7 +133,11 @@ class Principal:
                     audit = AuditoriaCorrentistas()
                     audit.get_instance().listar_por_cpf(c)
                     input()
-                elif opcao >= 6:
+                elif opcao == 6:
+                    audit = AuditoriaCorrentistas()
+                    print(audit.get_instance().serialize())
+                    input()
+                elif opcao >= 7:
                     break
             except SaldoNegativo:
                 print('O correntista {} ficará com saldo negativo. Operação não executada.'.format(
@@ -135,8 +153,9 @@ class Principal:
                 print('Opção inválida.')
                 input()
             except Exception as e:
-                print("outra exceção:" + e.__class__.__name__)
-                print("Mensagem:" + str(e))
+                raise
+                # print("outra exceção:" + e.__class__.__name__)
+                # print("Mensagem:" + str(e))
                 input()
 
 

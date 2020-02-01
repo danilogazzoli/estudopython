@@ -25,8 +25,6 @@ class Correntista:
         """ método para saque """    
         saq = Saque(valor)
         self.incrementa_saldo(saq) 
-
-        
     
     def incrementa_saldo(self,movimentacao):
         """ Método para incrementar"""
@@ -35,6 +33,12 @@ class Correntista:
             self.saldo = self.saldo + movimentacao.valor
             raise SaldoNegativo 
         self.historico.append(movimentacao)
+
+    def serialize(self):
+        return {
+            'nome': self.nome,
+            'cpf': self.Cpf.strcpf,
+            'saldo': self.saldo}    
 
     def __next__(self):
         if self.indice >= len(self.historico):

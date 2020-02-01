@@ -18,17 +18,15 @@ class Banco:
         if len(self.__listac) == 0:
             raise ListaVazia 
         self.print_correntistas(__listac)
+    
+    @property
+    def get_correntistas_count(self):
+        cont = len(self.__listac)
+        print('passou aqui {}'.format(cont))
+        return int(cont)
 
-    def cadastra_correntista(self):
-        print('Digite o nome:') 
-        nome = input()
-        print('Saldo inicial:')
-        saldoinicial = int(input())
-        print('CPF:')
-        cpf = input()
-        cp = Cpf(cpf)
-        c = Correntista(len(self.__listac) + 1,  nome, cp, saldoinicial)
-        self.__listac.append(c)
+    def cadastra_correntista(self, correntista):
+        self.__listac.append(correntista)
         
     def find_correntista_por_codigo(self, codigo):
         correntista = None

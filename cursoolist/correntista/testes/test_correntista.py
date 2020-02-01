@@ -3,7 +3,7 @@ import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import unittest
-from source.correntista import Correntista
+from src.correntista import Correntista
 
 
 class TestCorrentistaMethods(unittest.TestCase):
