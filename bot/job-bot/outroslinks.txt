@@ -1,0 +1,661 @@
+
+https://trampos.co/api/v2/opportunities?lc=&tr=&ct%5B%5D=programacao&ct[]=ti&tp%5B%5D=emprego&tp%5B%5D=freela&page=1
+
+https://trampos.co/oportunidades?ct[]=programacao&ct[]=ti&tp[]=emprego&tp[]=freela&page=3
+https://trampos.co/oportunidades?ct[]=programacao&ct[]=ti&tp[]=emprego&tp[]=freela
+
+{
+    "categories": [
+        {
+            "count": 17,
+            "name": "Social Media",
+            "slug": "social-media"
+        },
+        {
+            "count": 32,
+            "name": "Tecnologia da Informação",
+            "slug": "ti"
+        },
+        {
+            "count": 49,
+            "name": "Marketing",
+            "slug": "marketing"
+        },
+        {
+            "count": 43,
+            "name": "Criação",
+            "slug": "criacao"
+        },
+        {
+            "count": 64,
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "count": 8,
+            "name": "Planejamento",
+            "slug": "planejamento"
+        },
+        {
+            "count": 18,
+            "name": "Atendimento Publicitário",
+            "slug": "atendimento"
+        },
+        {
+            "count": 19,
+            "name": "Jornalismo e Conteúdo",
+            "slug": "jornalismo"
+        },
+        {
+            "count": 5,
+            "name": "Produção",
+            "slug": "producao"
+        },
+        {
+            "count": 2,
+            "name": "Rádio e TV",
+            "slug": "rtv"
+        },
+        {
+            "count": 6,
+            "name": "Outros",
+            "slug": "outros"
+        },
+        {
+            "count": 29,
+            "name": "Mídia",
+            "slug": "midia"
+        },
+        {
+            "count": 77,
+            "name": "Programação",
+            "slug": "programacao"
+        },
+        {
+            "count": 29,
+            "name": "Comercial",
+            "slug": "comercial"
+        },
+        {
+            "count": 7,
+            "name": "Análise e Gestão de Dados",
+            "slug": "dados"
+        },
+        {
+            "count": 4,
+            "name": "Educação e Treinamento",
+            "slug": "educacao"
+        },
+        {
+            "count": 5,
+            "name": "Projetos e Operações ",
+            "slug": "projetos"
+        },
+        {
+            "count": 1,
+            "name": "Recursos Humanos",
+            "slug": "rh"
+        },
+        {
+            "count": 9,
+            "name": "Administrativo e Financeiro",
+            "slug": "administrativo"
+        },
+        {
+            "count": 7,
+            "name": "Customer Success",
+            "slug": "cs"
+        }
+    ], 
+    "opportunities": [
+        {
+            "already_applied": false,
+            "badges": [],
+            "category_name": "Programação",
+            "category_slug": "programacao",
+            "city": "Rio de Janeiro",
+            "company": {
+                "cover": "//cdn2.trampos.co/assets/missing-company-cover-76dac5ed65c40c1b008470868abc7803.png",
+                "description": "A Confitec é uma empresa integradora de soluções de Sistemas de Informação, Consultoria de processos e Desenvolvimento de soluções de tecnologia especializada em soluções de seguros onde, nos últimos 10 anos, vem formando profissionais com conhecimento nesta área, com o objetivo de agregar valor nas soluções desenvolvidas para as seguradoras. \r\nEstamos, portanto, capacitados a desenvolver, implementar, fornecer suporte e disponibilizar soluções completas aos Clientes.",
+                "employees": "",
+                "id": 550154,
+                "logo": "//cdn4.trampos.co/companies/logos/550154/f489d62b1c66d93cbaa3a494a905897260c38b21/medium/confitec_1.png",
+                "logo_mini": "//cdn4.trampos.co/companies/logos/550154/7549e3b8820ba7cb60ab04ea20be725c1706e021/mini/confitec_1.png",
+                "name": "Confitec ",
+                "networks": [],
+                "slug": "confitec",
+                "url": "https://trampos.co/confitec"
+            },
+            "email_share_url": "https://trampos.co/oportunidades/157621-desenvolvedor-vb6-sql-server/share/email",
+            "email_shares": "1",
+            "facebook_share_url": "http://www.facebook.com/share.php?u=https://trmp.co/2KpGxGR",
+            "facebook_shares": "0",
+            "hide_ads": false,
+            "highlight": false,
+            "id": 157621,
+            "name": "Desenvolvedor VB6/SQL Server",
+            "published_at": "2020-04-26T11:35:04.000-03:00",
+            "state": "RJ",
+            "tweet_count": "0",
+            "twitter_share_url": "http://twitter.com/share?text=Oportunidade de Desenvolvedor VB6/SQL Server @ Confitec  (via @trampos)&url=https://trmp.co/2KpGxGR",
+            "type_name": "Emprego",
+            "type_slug": "emprego",
+            "whatsapp_share_url": "https://trampos.co/oportunidades/157621-desenvolvedor-vb6-sql-server/share/whatsapp",
+            "whatsapp_shares": "1"
+        },
+        {
+            "already_applied": false,
+            "badges": [],
+            "category_name": "Programação",
+            "category_slug": "programacao",
+            "city": "São Paulo",
+            "company": {
+                "cover": "//cdn2.trampos.co/assets/missing-company-cover-76dac5ed65c40c1b008470868abc7803.png",
+                "description": "Somos uma empresa especialista em soluções e serviços para distribuição de conteúdo digital protegido de vídeo on-demand, oferecemos plataformas e ferramentas para gerenciamento de conteúdo e toda a infraestrutura para ingestão, encodamento, captação, produção e edição do conteúdo audiovisual, com métricas e estatísticas de audiência.\r\n\r\nSomos parceira de várias plataformas de VOD e está focada na distribuição digital de conteúdos nos modelos de SVOD, TVOD (VOD [locação] e EST [venda]), FVOD e AVOD. Gerenciamos e liberamos os conteúdos nas plataformas com eficiência Somos o principal agregador de plataformas no Brasil e na América Latina com uma tecnologia inovadora!\r\n\r\nVenha fazer parte do nosso time!",
+                "employees": "",
+                "id": 94360,
+                "logo": "//cdn0.trampos.co/companies/logos/94360/8d9ea961360679bb80e64047d0c75c4e7b0ad0ab/medium/open-uri20131104-17609-12pjzs0",
+                "logo_mini": "//cdn0.trampos.co/companies/logos/94360/70b24144c42749032f2b00693efe65cd4abbc9cf/mini/open-uri20131104-17609-12pjzs0",
+                "name": "Encripta",
+                "networks": [],
+                "slug": "encripta",
+                "url": "https://trampos.co/encripta"
+            },
+            "email_share_url": "https://trampos.co/oportunidades/157619-desenvolvedor-front-end-senior/share/email",
+            "email_shares": "5",
+            "facebook_share_url": "http://www.facebook.com/share.php?u=https://trmp.co/3akEMFc",
+            "facebook_shares": "0",
+            "hide_ads": false,
+            "highlight": false,
+            "id": 157619,
+            "name": "Desenvolvedor(a) Front-end Sênior",
+            "published_at": "2020-04-26T10:25:04.000-03:00",
+            "state": "SP",
+            "tweet_count": "0",
+            "twitter_share_url": "http://twitter.com/share?text=Oportunidade de Desenvolvedor(a) Front-end Sênior @ Encripta (via @trampos)&url=https://trmp.co/3akEMFc",
+            "type_name": "Emprego",
+            "type_slug": "emprego",
+            "whatsapp_share_url": "https://trampos.co/oportunidades/157619-desenvolvedor-front-end-senior/share/whatsapp",
+            "whatsapp_shares": "5"
+        },
+        {
+            "already_applied": false,
+            "badges": [],
+            "category_name": "Programação",
+            "category_slug": "programacao",
+            "city": "São Paulo",
+            "company": {
+                "cover": "//cdn2.trampos.co/assets/missing-company-cover-76dac5ed65c40c1b008470868abc7803.png",
+                "description": "A Confitec é uma empresa integradora de soluções de Sistemas de Informação, Consultoria de processos e Desenvolvimento de soluções de tecnologia especializada em soluções de seguros onde, nos últimos 10 anos, vem formando profissionais com conhecimento nesta área, com o objetivo de agregar valor nas soluções desenvolvidas para as seguradoras. \r\nEstamos, portanto, capacitados a desenvolver, implementar, fornecer suporte e disponibilizar soluções completas aos Clientes.",
+                "employees": "",
+                "id": 550154,
+                "logo": "//cdn4.trampos.co/companies/logos/550154/f489d62b1c66d93cbaa3a494a905897260c38b21/medium/confitec_1.png",
+                "logo_mini": "//cdn4.trampos.co/companies/logos/550154/7549e3b8820ba7cb60ab04ea20be725c1706e021/mini/confitec_1.png",
+                "name": "Confitec ",
+                "networks": [],
+                "slug": "confitec",
+                "url": "https://trampos.co/confitec"
+            },
+            "email_share_url": "https://trampos.co/oportunidades/157615-desenvolvedor-asp-net-pleno/share/email",
+            "email_shares": "1",
+            "facebook_share_url": "http://www.facebook.com/share.php?u=https://trmp.co/2VsYgC0",
+            "facebook_shares": "0",
+            "hide_ads": false,
+            "highlight": false,
+            "id": 157615,
+            "name": "Desenvolvedor(a) ASP .Net Pleno",
+            "published_at": "2020-04-25T17:55:08.000-03:00",
+            "state": "SP",
+            "tweet_count": "0",
+            "twitter_share_url": "http://twitter.com/share?text=Oportunidade de Desenvolvedor(a) ASP .Net Pleno @ Confitec  (via @trampos)&url=https://trmp.co/2VsYgC0",
+            "type_name": "Emprego",
+            "type_slug": "emprego",
+            "whatsapp_share_url": "https://trampos.co/oportunidades/157615-desenvolvedor-asp-net-pleno/share/whatsapp",
+            "whatsapp_shares": "1"
+        },
+        {
+            "already_applied": false,
+            "badges": [],
+            "category_name": "Tecnologia da Informação",
+            "category_slug": "ti",
+            "city": "São Paulo",
+            "company": {
+                "cover": "//cdn2.trampos.co/assets/missing-company-cover-76dac5ed65c40c1b008470868abc7803.png",
+                "description": "Gauge\r\n\r\nEntender o comportamento dos usuários em relação a uma marca ou serviço e entregar soluções que atendam as necessidades e desejos dos consumidores. Este é o objetivo da Gauge! \r\n\r\nTanto em ambientes proprietários como em sites, aplicativos e mídias sociais, as pessoas fornecem informações valiosas o tempo todo, seja através de um padrão de navegação ou por opiniões expressas.\r\n\r\nÉ por isso que a Gauge alia o conhecimento teórico às informações geradas ao redor de uma marca e as utiliza como combustível para criar experiências digitais mais relevantes para usuários e consumidores.",
+                "employees": "",
+                "id": 112090,
+                "logo": "//cdn0.trampos.co/companies/logos/112090/80a7183519e2af9a2cec988e5e7adba246e3e43c/medium/gauge.png",
+                "logo_mini": "//cdn0.trampos.co/companies/logos/112090/975b65b50fafeb71c8faf1dd0b7066dfd434c726/mini/gauge.png",
+                "name": "Gauge",
+                "networks": [
+                    {
+                        "icon": "fa fa-facebook-square",
+                        "id": 10549,
+                        "name": "Facebook",
+                        "url": "http://www.facebook.com/gauge"
+                    },
+                    {
+                        "icon": "fa fa-twitter-square",
+                        "id": 10550,
+                        "name": "Twitter",
+                        "url": "http://www.twitter.com/gauge"
+                    },
+                    {
+                        "icon": "fa fa-linkedin-square",
+                        "id": 10551,
+                        "name": "Linkedin",
+                        "url": "http://linkedin.com/company/gauge"
+                    },
+                    {
+                        "icon": "fa fa-instagram",
+                        "id": 10552,
+                        "name": "Instagram",
+                        "url": "http://instagram.com/beanexperience"
+                    }
+                ],
+                "slug": "gauge",
+                "url": "https://trampos.co/gauge"
+            },
+            "email_share_url": "https://trampos.co/oportunidades/157680-scrum-master/share/email",
+            "email_shares": "1",
+            "facebook_share_url": "http://www.facebook.com/share.php?u=https://trmp.co/3aAUhZI",
+            "facebook_shares": "0",
+            "hide_ads": false,
+            "highlight": false,
+            "id": 157680,
+            "name": "Scrum Master",
+            "published_at": "2020-04-23T17:42:47.000-03:00",
+            "state": "SP",
+            "tweet_count": "0",
+            "twitter_share_url": "http://twitter.com/share?text=Oportunidade de Scrum Master @ Gauge (via @trampos)&url=https://trmp.co/3aAUhZI",
+            "type_name": "Emprego",
+            "type_slug": "emprego",
+            "whatsapp_share_url": "https://trampos.co/oportunidades/157680-scrum-master/share/whatsapp",
+            "whatsapp_shares": "2"
+        },
+        {
+            "already_applied": false,
+            "badges": [],
+            "category_name": "Tecnologia da Informação",
+            "category_slug": "ti",
+            "city": "Rio de Janeiro",
+            "company": {
+                "cover": "//cdn2.trampos.co/assets/missing-company-cover-76dac5ed65c40c1b008470868abc7803.png",
+                "description": "Gauge\r\n\r\nEntender o comportamento dos usuários em relação a uma marca ou serviço e entregar soluções que atendam as necessidades e desejos dos consumidores. Este é o objetivo da Gauge! \r\n\r\nTanto em ambientes proprietários como em sites, aplicativos e mídias sociais, as pessoas fornecem informações valiosas o tempo todo, seja através de um padrão de navegação ou por opiniões expressas.\r\n\r\nÉ por isso que a Gauge alia o conhecimento teórico às informações geradas ao redor de uma marca e as utiliza como combustível para criar experiências digitais mais relevantes para usuários e consumidores.",
+                "employees": "",
+                "id": 112090,
+                "logo": "//cdn0.trampos.co/companies/logos/112090/80a7183519e2af9a2cec988e5e7adba246e3e43c/medium/gauge.png",
+                "logo_mini": "//cdn0.trampos.co/companies/logos/112090/975b65b50fafeb71c8faf1dd0b7066dfd434c726/mini/gauge.png",
+                "name": "Gauge",
+                "networks": [
+                    {
+                        "icon": "fa fa-facebook-square",
+                        "id": 10549,
+                        "name": "Facebook",
+                        "url": "http://www.facebook.com/gauge"
+                    },
+                    {
+                        "icon": "fa fa-twitter-square",
+                        "id": 10550,
+                        "name": "Twitter",
+                        "url": "http://www.twitter.com/gauge"
+                    },
+                    {
+                        "icon": "fa fa-linkedin-square",
+                        "id": 10551,
+                        "name": "Linkedin",
+                        "url": "http://linkedin.com/company/gauge"
+                    },
+                    {
+                        "icon": "fa fa-instagram",
+                        "id": 10552,
+                        "name": "Instagram",
+                        "url": "http://instagram.com/beanexperience"
+                    }
+                ],
+                "slug": "gauge",
+                "url": "https://trampos.co/gauge"
+            },
+            "email_share_url": "https://trampos.co/oportunidades/157581-arquiteto-de-solucoes/share/email",
+            "email_shares": "2",
+            "facebook_share_url": "http://www.facebook.com/share.php?u=https://trmp.co/2RvWXBe",
+            "facebook_shares": "0",
+            "hide_ads": false,
+            "highlight": false,
+            "id": 157581,
+            "name": "Arquiteto(a) de Soluções",
+            "published_at": "2020-04-22T17:25:05.000-03:00",
+            "state": "RJ",
+            "tweet_count": "0",
+            "twitter_share_url": "http://twitter.com/share?text=Oportunidade de Arquiteto(a) de Soluções @ Gauge (via @trampos)&url=https://trmp.co/2RvWXBe",
+            "type_name": "Emprego",
+            "type_slug": "emprego",
+            "whatsapp_share_url": "https://trampos.co/oportunidades/157581-arquiteto-de-solucoes/share/whatsapp",
+            "whatsapp_shares": "2"
+        },
+        {
+            "already_applied": false,
+            "badges": [],
+            "category_name": "Tecnologia da Informação",
+            "category_slug": "ti",
+            "city": "Rio de Janeiro",
+            "company": {
+                "cover": "//cdn2.trampos.co/assets/missing-company-cover-76dac5ed65c40c1b008470868abc7803.png",
+                "description": "Gauge\r\n\r\nEntender o comportamento dos usuários em relação a uma marca ou serviço e entregar soluções que atendam as necessidades e desejos dos consumidores. Este é o objetivo da Gauge! \r\n\r\nTanto em ambientes proprietários como em sites, aplicativos e mídias sociais, as pessoas fornecem informações valiosas o tempo todo, seja através de um padrão de navegação ou por opiniões expressas.\r\n\r\nÉ por isso que a Gauge alia o conhecimento teórico às informações geradas ao redor de uma marca e as utiliza como combustível para criar experiências digitais mais relevantes para usuários e consumidores.",
+                "employees": "",
+                "id": 112090,
+                "logo": "//cdn0.trampos.co/companies/logos/112090/80a7183519e2af9a2cec988e5e7adba246e3e43c/medium/gauge.png",
+                "logo_mini": "//cdn0.trampos.co/companies/logos/112090/975b65b50fafeb71c8faf1dd0b7066dfd434c726/mini/gauge.png",
+                "name": "Gauge",
+                "networks": [
+                    {
+                        "icon": "fa fa-facebook-square",
+                        "id": 10549,
+                        "name": "Facebook",
+                        "url": "http://www.facebook.com/gauge"
+                    },
+                    {
+                        "icon": "fa fa-twitter-square",
+                        "id": 10550,
+                        "name": "Twitter",
+                        "url": "http://www.twitter.com/gauge"
+                    },
+                    {
+                        "icon": "fa fa-linkedin-square",
+                        "id": 10551,
+                        "name": "Linkedin",
+                        "url": "http://linkedin.com/company/gauge"
+                    },
+                    {
+                        "icon": "fa fa-instagram",
+                        "id": 10552,
+                        "name": "Instagram",
+                        "url": "http://instagram.com/beanexperience"
+                    }
+                ],
+                "slug": "gauge",
+                "url": "https://trampos.co/gauge"
+            },
+            "email_share_url": "https://trampos.co/oportunidades/157580-especialista-em-seguranca/share/email",
+            "email_shares": "3",
+            "facebook_share_url": "http://www.facebook.com/share.php?u=https://trmp.co/34xj8wd",
+            "facebook_shares": "0",
+            "hide_ads": false,
+            "highlight": false,
+            "id": 157580,
+            "name": "Especialista em Segurança",
+            "published_at": "2020-04-22T17:20:04.000-03:00",
+            "state": "RJ",
+            "tweet_count": "0",
+            "twitter_share_url": "http://twitter.com/share?text=Oportunidade de Especialista em Segurança @ Gauge (via @trampos)&url=https://trmp.co/34xj8wd",
+            "type_name": "Emprego",
+            "type_slug": "emprego",
+            "whatsapp_share_url": "https://trampos.co/oportunidades/157580-especialista-em-seguranca/share/whatsapp",
+            "whatsapp_shares": "2"
+        },
+        {
+            "already_applied": false,
+            "badges": [],
+            "category_name": "Tecnologia da Informação",
+            "category_slug": "ti",
+            "city": "Rio de Janeiro",
+            "company": {
+                "cover": "//cdn2.trampos.co/assets/missing-company-cover-76dac5ed65c40c1b008470868abc7803.png",
+                "description": "Gauge\r\n\r\nEntender o comportamento dos usuários em relação a uma marca ou serviço e entregar soluções que atendam as necessidades e desejos dos consumidores. Este é o objetivo da Gauge! \r\n\r\nTanto em ambientes proprietários como em sites, aplicativos e mídias sociais, as pessoas fornecem informações valiosas o tempo todo, seja através de um padrão de navegação ou por opiniões expressas.\r\n\r\nÉ por isso que a Gauge alia o conhecimento teórico às informações geradas ao redor de uma marca e as utiliza como combustível para criar experiências digitais mais relevantes para usuários e consumidores.",
+                "employees": "",
+                "id": 112090,
+                "logo": "//cdn0.trampos.co/companies/logos/112090/80a7183519e2af9a2cec988e5e7adba246e3e43c/medium/gauge.png",
+                "logo_mini": "//cdn0.trampos.co/companies/logos/112090/975b65b50fafeb71c8faf1dd0b7066dfd434c726/mini/gauge.png",
+                "name": "Gauge",
+                "networks": [
+                    {
+                        "icon": "fa fa-facebook-square",
+                        "id": 10549,
+                        "name": "Facebook",
+                        "url": "http://www.facebook.com/gauge"
+                    },
+                    {
+                        "icon": "fa fa-twitter-square",
+                        "id": 10550,
+                        "name": "Twitter",
+                        "url": "http://www.twitter.com/gauge"
+                    },
+                    {
+                        "icon": "fa fa-linkedin-square",
+                        "id": 10551,
+                        "name": "Linkedin",
+                        "url": "http://linkedin.com/company/gauge"
+                    },
+                    {
+                        "icon": "fa fa-instagram",
+                        "id": 10552,
+                        "name": "Instagram",
+                        "url": "http://instagram.com/beanexperience"
+                    }
+                ],
+                "slug": "gauge",
+                "url": "https://trampos.co/gauge"
+            },
+            "email_share_url": "https://trampos.co/oportunidades/157578-analista-devops/share/email",
+            "email_shares": "1",
+            "facebook_share_url": "http://www.facebook.com/share.php?u=https://trmp.co/3cdc36C",
+            "facebook_shares": "0",
+            "hide_ads": false,
+            "highlight": false,
+            "id": 157578,
+            "name": "Analista DevOps",
+            "published_at": "2020-04-22T17:10:08.000-03:00",
+            "state": "RJ",
+            "tweet_count": "0",
+            "twitter_share_url": "http://twitter.com/share?text=Oportunidade de Analista DevOps @ Gauge (via @trampos)&url=https://trmp.co/3cdc36C",
+            "type_name": "Emprego",
+            "type_slug": "emprego",
+            "whatsapp_share_url": "https://trampos.co/oportunidades/157578-analista-devops/share/whatsapp",
+            "whatsapp_shares": "2"
+        },
+        {
+            "already_applied": false,
+            "badges": [],
+            "category_name": "Programação",
+            "category_slug": "programacao",
+            "city": "são paulo",
+            "company": {
+                "cover": "//cdn2.trampos.co/assets/missing-company-cover-76dac5ed65c40c1b008470868abc7803.png",
+                "description": null,
+                "employees": null,
+                "id": 814646,
+                "logo": null,
+                "logo_mini": null,
+                "name": "FT INNOVATION CONCEPT  ",
+                "networks": [],
+                "slug": "ft-innovation-concept",
+                "url": "https://trampos.co/ft-innovation-concept"
+            },
+            "email_share_url": "https://trampos.co/oportunidades/157577-desenvolvedor-web-php-full-stack/share/email",
+            "email_shares": "1",
+            "facebook_share_url": "http://www.facebook.com/share.php?u=http://trampos.co/oportunidades/157577-desenvolvedor-web-php-full-stack",
+            "facebook_shares": "0",
+            "hide_ads": false,
+            "highlight": false,
+            "id": 157577,
+            "name": "Desenvolvedor(a) Web PHP/Full Stack ",
+            "published_at": "2020-04-22T16:35:05.000-03:00",
+            "state": "SP",
+            "tweet_count": "0",
+            "twitter_share_url": "http://twitter.com/share?text=Oportunidade de Desenvolvedor(a) Web PHP/Full Stack  @ FT INNOVATION CONCEPT   (via @trampos)&url=http://trampos.co/oportunidades/157577-desenvolvedor-web-php-full-stack",
+            "type_name": "Emprego",
+            "type_slug": "emprego",
+            "whatsapp_share_url": "https://trampos.co/oportunidades/157577-desenvolvedor-web-php-full-stack/share/whatsapp",
+            "whatsapp_shares": "1"
+        },
+        {
+            "already_applied": false,
+            "badges": [],
+            "category_name": "Programação",
+            "category_slug": "programacao",
+            "city": "São Paulo",
+            "company": {
+                "cover": "//cdn2.trampos.co/assets/missing-company-cover-76dac5ed65c40c1b008470868abc7803.png",
+                "description": "Somos uma empresa especialista em soluções e serviços para distribuição de conteúdo digital protegido de vídeo on-demand, oferecemos plataformas e ferramentas para gerenciamento de conteúdo e toda a infraestrutura para ingestão, encodamento, captação, produção e edição do conteúdo audiovisual, com métricas e estatísticas de audiência.\r\n\r\nSomos parceira de várias plataformas de VOD e está focada na distribuição digital de conteúdos nos modelos de SVOD, TVOD (VOD [locação] e EST [venda]), FVOD e AVOD. Gerenciamos e liberamos os conteúdos nas plataformas com eficiência Somos o principal agregador de plataformas no Brasil e na América Latina com uma tecnologia inovadora!\r\n\r\nVenha fazer parte do nosso time!",
+                "employees": "",
+                "id": 94360,
+                "logo": "//cdn0.trampos.co/companies/logos/94360/8d9ea961360679bb80e64047d0c75c4e7b0ad0ab/medium/open-uri20131104-17609-12pjzs0",
+                "logo_mini": "//cdn0.trampos.co/companies/logos/94360/70b24144c42749032f2b00693efe65cd4abbc9cf/mini/open-uri20131104-17609-12pjzs0",
+                "name": "Encripta",
+                "networks": [],
+                "slug": "encripta",
+                "url": "https://trampos.co/encripta"
+            },
+            "email_share_url": "https://trampos.co/oportunidades/157556-desenvolvedor-back-end/share/email",
+            "email_shares": "3",
+            "facebook_share_url": "http://www.facebook.com/share.php?u=https://trmp.co/2XmiwYS",
+            "facebook_shares": "0",
+            "hide_ads": false,
+            "highlight": false,
+            "id": 157556,
+            "name": "Desenvolvedor(a) Back-end ",
+            "published_at": "2020-04-17T18:00:09.000-03:00",
+            "state": "SP",
+            "tweet_count": "0",
+            "twitter_share_url": "http://twitter.com/share?text=Oportunidade de Desenvolvedor(a) Back-end  @ Encripta (via @trampos)&url=https://trmp.co/2XmiwYS",
+            "type_name": "Emprego",
+            "type_slug": "emprego",
+            "whatsapp_share_url": "https://trampos.co/oportunidades/157556-desenvolvedor-back-end/share/whatsapp",
+            "whatsapp_shares": "3"
+        },
+        {
+            "already_applied": false,
+            "badges": [],
+            "category_name": "Programação",
+            "category_slug": "programacao",
+            "city": "São Paulo",
+            "company": {
+                "cover": "//cdn2.trampos.co/assets/missing-company-cover-76dac5ed65c40c1b008470868abc7803.png",
+                "description": "Somos uma empresa especialista em soluções e serviços para distribuição de conteúdo digital protegido de vídeo on-demand, oferecemos plataformas e ferramentas para gerenciamento de conteúdo e toda a infraestrutura para ingestão, encodamento, captação, produção e edição do conteúdo audiovisual, com métricas e estatísticas de audiência.\r\n\r\nSomos parceira de várias plataformas de VOD e está focada na distribuição digital de conteúdos nos modelos de SVOD, TVOD (VOD [locação] e EST [venda]), FVOD e AVOD. Gerenciamos e liberamos os conteúdos nas plataformas com eficiência Somos o principal agregador de plataformas no Brasil e na América Latina com uma tecnologia inovadora!\r\n\r\nVenha fazer parte do nosso time!",
+                "employees": "",
+                "id": 94360,
+                "logo": "//cdn0.trampos.co/companies/logos/94360/8d9ea961360679bb80e64047d0c75c4e7b0ad0ab/medium/open-uri20131104-17609-12pjzs0",
+                "logo_mini": "//cdn0.trampos.co/companies/logos/94360/70b24144c42749032f2b00693efe65cd4abbc9cf/mini/open-uri20131104-17609-12pjzs0",
+                "name": "Encripta",
+                "networks": [],
+                "slug": "encripta",
+                "url": "https://trampos.co/encripta"
+            },
+            "email_share_url": "https://trampos.co/oportunidades/157553-desenvolvedor-android/share/email",
+            "email_shares": "3",
+            "facebook_share_url": "http://www.facebook.com/share.php?u=https://trmp.co/2RhnEcT",
+            "facebook_shares": "0",
+            "hide_ads": false,
+            "highlight": false,
+            "id": 157553,
+            "name": "Desenvolvedor(a) Android ",
+            "published_at": "2020-04-17T15:45:04.000-03:00",
+            "state": "SP",
+            "tweet_count": "0",
+            "twitter_share_url": "http://twitter.com/share?text=Oportunidade de Desenvolvedor(a) Android  @ Encripta (via @trampos)&url=https://trmp.co/2RhnEcT",
+            "type_name": "Emprego",
+            "type_slug": "emprego",
+            "whatsapp_share_url": "https://trampos.co/oportunidades/157553-desenvolvedor-android/share/whatsapp",
+            "whatsapp_shares": "2"
+        },
+        {
+            "already_applied": false,
+            "badges": [],
+            "category_name": "Programação",
+            "category_slug": "programacao",
+            "city": "Barueri",
+            "company": {
+                "cover": "//cdn2.trampos.co/assets/missing-company-cover-76dac5ed65c40c1b008470868abc7803.png",
+                "description": null,
+                "employees": null,
+                "id": 792350,
+                "logo": null,
+                "logo_mini": null,
+                "name": "BMG GRANITO",
+                "networks": [],
+                "slug": "bmg-granito",
+                "url": "https://trampos.co/bmg-granito"
+            },
+            "email_share_url": "https://trampos.co/oportunidades/157551-desenvolvedor-mobile-pleno/share/email",
+            "email_shares": "2",
+            "facebook_share_url": "http://www.facebook.com/share.php?u=https://trmp.co/3bUaxpU",
+            "facebook_shares": "0",
+            "hide_ads": false,
+            "highlight": false,
+            "id": 157551,
+            "name": "Desenvolvedor(a) Mobile Pleno",
+            "published_at": "2020-04-17T13:00:07.000-03:00",
+            "state": "SP",
+            "tweet_count": "0",
+            "twitter_share_url": "http://twitter.com/share?text=Oportunidade de Desenvolvedor(a) Mobile Pleno @ BMG GRANITO (via @trampos)&url=https://trmp.co/3bUaxpU",
+            "type_name": "Emprego",
+            "type_slug": "emprego",
+            "whatsapp_share_url": "https://trampos.co/oportunidades/157551-desenvolvedor-mobile-pleno/share/whatsapp",
+            "whatsapp_shares": "2"
+        },
+        {
+            "already_applied": false,
+            "badges": [],
+            "category_name": "Programação",
+            "category_slug": "programacao",
+            "city": "São Paulo",
+            "company": {
+                "cover": "//cdn2.trampos.co/assets/missing-company-cover-76dac5ed65c40c1b008470868abc7803.png",
+                "description": "Utilizamos metodologias de desenvolvimento Ágil de software para criar produtos que ajudam grandes empresas a reduzir seus custos de TI, aprimorar a conformidade normativa e aumentar a produtividade em questões de identidade e gerenciamento de acesso de seus usuários.\r\n\r\n",
+                "employees": "",
+                "id": 257610,
+                "logo": "//cdn0.trampos.co/companies/logos/257610/25143e8c924f651893db2ff10475031b46e3a68d/medium/autoseg.png",
+                "logo_mini": "//cdn0.trampos.co/companies/logos/257610/b97edd3f7873c61ba033c73ce7264d0ab9cb3b45/mini/autoseg.png",
+                "name": "AutoSeg",
+                "networks": [
+                    {
+                        "icon": "fa fa-linkedin-square",
+                        "id": 10736,
+                        "name": "Linkedin",
+                        "url": "http://linkedin.com/company/autoseg"
+                    }
+                ],
+                "slug": "autoseg",
+                "url": "https://trampos.co/autoseg"
+            },
+            "email_share_url": "https://trampos.co/oportunidades/157543-desenvolvedor-ruby-on-rails-junior/share/email",
+            "email_shares": "4",
+            "facebook_share_url": "http://www.facebook.com/share.php?u=https://trmp.co/2URvuw7",
+            "facebook_shares": "0",
+            "hide_ads": false,
+            "highlight": false,
+            "id": 157543,
+            "name": "Desenvolvedor(a) Ruby on Rails Júnior",
+            "published_at": "2020-04-16T16:50:05.000-03:00",
+            "state": "SP",
+            "tweet_count": "0",
+            "twitter_share_url": "http://twitter.com/share?text=Oportunidade de Desenvolvedor(a) Ruby on Rails Júnior @ AutoSeg (via @trampos)&url=https://trmp.co/2URvuw7",
+            "type_name": "Emprego",
+            "type_slug": "emprego",
+            "whatsapp_share_url": "https://trampos.co/oportunidades/157543-desenvolvedor-ruby-on-rails-junior/share/whatsapp",
+            "whatsapp_shares": "2"
+        }
+    ],
+    "pagination": {
+        "per_page": 12,
+        "total": 109,
+        "total_pages": 10
+    },
+    "types": [
+        {
+            "count": 102,
+            "name": "Emprego",
+            "slug": "emprego"
+        },
+        {
+            "count": 3,
+            "name": "Estágio",
+            "slug": "estagio"
+        },
+        {
+            "count": 7,
+            "name": "Freela",
+            "slug": "freela"
+        }
+    ]
+}
